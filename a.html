@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <script>
+             var x=4;
+            var family=['Vanitha', 'Rameesh', 'Lohisree', 'Avi'];
+            document.write(family[1]+"<br>");
+
+            var fa=family.join('****')
+            document.write(family + "<br>DataType:"+ typeof (fa) + "<br><br>");
+             
+            document.write(fa + "<br>DataType:" + typeof (fa) + "<br><br>");
+
+            var y=family.pop();
+            document.write(family + "<br>");
+            document.write("<br>Deleted element:" + y + "<br><br>");
+
+
+            function mul(e,f,g){
+                document.write("mul function starts <br>");
+                var x=e+f+g;
+                document.write("multiplication ="+x+" <br>");
+                document.write("mul function ends <br>");
+            }
+            function add(e, f, g) {
+                    document.write("add function starts <br>");
+                    var x = e + f + g;
+                    document.write("addition =" + x + " <br>");
+                    document.write("add function ends <br>");
+                }
+                function main(a1, a2, a3) {
+                        document.write("main function starts <br>");
+                        add(a1, a2, a3)
+                        mul(a1, a2, a3)
+                        document.write("main function ends <br>");
+                }
+                main(45,6,98);
+        </script>
+    </body>
+</html>
